@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Sabiá - a IA do MPRS",
+  "version": "1.2",
+  "description": "Acrescenta funções de inteligência artificial ao site do TJRS.",
+  "permissions": ["scripting"],
+  "host_permissions": ["*://*.tjrs.jus.br/*"],
+      "icons": {
+        "16": "sabia.png",
+        "24": "sabia.png",
+        "32": "sabia.png",
+        "48": "sabia.png"
+        },
+  "action": {
+    "default_title": "Ferramentas de IA do MPRS"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.tjrs.jus.br/*"],
+      "js": ["contentScript.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
