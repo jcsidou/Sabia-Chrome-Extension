@@ -11,7 +11,8 @@
         const iaLink = document.createElement('a');
         // iaLink.textContent = 'ia';
         const img = document.createElement('img');
-        img.src = chrome.runtime.getURL('./sabia.png');
+        // img.src = chrome.runtime.getURL('https://github.com/jcsidou/Sabia-Chrome-Extension/blob/main/Sabia.png');
+        img.src = 'https://github.com/jcsidou/Sabia-Chrome-Extension/blob/main/Sabia.png?raw=true';
         img.style.height = '16px'; // ajuste o tamanho conforme necessário
         img.style.verticalAlign = 'middle';
         iaLink.appendChild(img);
